@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from rune_manager import RuneManager
 import traceback
-
+import logging
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True, origins=["http://localhost:3000"])  # Enable CORS for all routes
@@ -13,10 +13,10 @@ def create_rune_manager(rpc_user, rpc_password, rpc_url, wallet_name="wallet"):
     Dynamically create a RuneManager instance with provided credentials.
     """
     # Debug output
-    print(f"RPC User: {rpc_user}")
-    print(f"RPC Password: {rpc_password}")
-    print(f"Formatted RPC URL: {rpc_url}")
-    print(f"Wallet Name: {wallet_name}")
+    logging.info(f"RPC User: {rpc_user}")
+    logging.info(f"Formatted RPC URL: {rpc_url}")
+    logging.info(f"Wallet Name: {wallet_name}")
+    logging.info("RPC Password: [HIDDEN]")  # Hide sensitive info
 
     return RuneManager(rpc_user, rpc_password, rpc_url)
 

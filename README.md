@@ -4,41 +4,23 @@ This Project contains
 
 ## Prerequisites
 
-You need a locally running bitcoin node to run this tool: https://bitcoin.org/en/bitcoin-core/
+You'll need a locally running bitcoin node to run this tool: https://bitcoin.org/en/bitcoin-core/
+You'll need python and npm installed
 
-## React Front-End
-
-In main project directory, you can run:
-
- ```bash
- npm start
- ```
-
-## Flask App
-
-Inside the flask-app directory, run the following commands:
-
+If you're using a Mac, you'll need to run the following first:
 ```bash
 brew install python@3.11
 python3.11 -m venv .venv
 source .venv/bin/activate
-pip install flask
-pip install flask_cors
-pip install requests
 ```
 
+### Start the Tool
 Once ready, run:
 ```bash
-python app.py`
+./start_services.sh
 ```
 
-## Bitcoin-Proxy Server
 
-Inside bitcoin-proxy, run:
-
-```bash
- node server.js
- ```
 
 ### RPC Settings
 Check http://localhost:3000/ to view the tool
