@@ -1,6 +1,6 @@
 # Bitcoin Licence Tool
 
-This Project contains tool for creating on-chain software licenses using Bitcoin Ordinals. A software license exists inside the OP_RETURN field of a UTXO
+This Project is designed to create on-chain software licenses using Bitcoin Ordinals. A software license exists inside the OP_RETURN field of a UTXO
 
 A software license contains json that matches the following: 
 
