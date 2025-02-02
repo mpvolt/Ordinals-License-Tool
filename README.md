@@ -1,10 +1,15 @@
 # Bitcoin Licence Tool
 
-This Project contains 
+This Project contains tool for creating on-chain software licenses using Bitcoin Ordinals. A software license exists inside the OP_RETURN field of a UTXO
+
+A software license contains json that matches the following: 
+
+{"rune_id": unique_id, "issued_date": issued_timestamp}
 
 ## Prerequisites
 
 You'll need a locally running bitcoin node to run this tool: https://bitcoin.org/en/bitcoin-core/
+
 You'll need python and npm installed
 
 If you're using a Mac, you'll need to run the following first:
