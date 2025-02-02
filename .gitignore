@@ -1,0 +1,36 @@
+# Node.js dependencies
+node_modules/
+.next/
+out/
+dist/
+
+# Rust target directory
+target/
+
+#Python
+.venv/
+
+# Logs and system files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.lock
+*.log
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# Environment variables
+.env
+.env.local
+.env.*.local
